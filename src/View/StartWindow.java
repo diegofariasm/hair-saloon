@@ -210,6 +210,10 @@ public class StartWindow extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
+        System.setProperty("awt.useSystemAAFontSettings","on");
+        System.setProperty("swing.aatext", "true");
+
+        
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new StartWindow().setVisible(true);
