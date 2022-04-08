@@ -39,7 +39,7 @@ public class mainWindow extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         mainDesktop.setBackground(new java.awt.Color(32, 32, 35));
-        mainDesktop.setLayout(new java.awt.GridLayout());
+        mainDesktop.setLayout(new java.awt.GridLayout(1, 0));
 
         painel_desktop.setBackground(new java.awt.Color(32, 32, 35));
 
@@ -140,9 +140,9 @@ public class mainWindow extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_agend, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(btn_about, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_products, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_about, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -176,16 +176,29 @@ public class mainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_homeActionPerformed
 
     private void btn_productsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_productsActionPerformed
-       
-       
+         mainDesktop.removeAll();
+        Products screenProducts = new Products();
+        mainDesktop.add(screenProducts);
+        
+        screenProducts.setVisible(true);
+        screenProducts.setSize(mainDesktop.getWidth(), mainDesktop.getHeight());
+        
     }//GEN-LAST:event_btn_productsActionPerformed
 
     private void btn_agendActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_agendActionPerformed
-        // TODO add your handling code here:
+        mainDesktop.removeAll();
+        Agendar agendar = new Agendar();
+        mainDesktop.add(agendar);
+        agendar.setVisible(true);
+        agendar.setSize(mainDesktop.getWidth(), mainDesktop.getHeight());
     }//GEN-LAST:event_btn_agendActionPerformed
 
     private void btn_aboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_aboutActionPerformed
-        // TODO add your handling code here:
+        mainDesktop.removeAll();
+        About about = new About();
+        mainDesktop.add(about);
+        about.setVisible(true);
+        about.setSize(mainDesktop.getWidth(), mainDesktop.getHeight());
     }//GEN-LAST:event_btn_aboutActionPerformed
     
     /**
