@@ -9,12 +9,12 @@ package View;
  *
  * @author dovah
  */
-public class StartWindow extends javax.swing.JFrame {
+public class FirstWindow extends javax.swing.JFrame {
 
     /**
      * Creates new form mainWindow
      */
-    public StartWindow() {
+    public FirstWindow() {
         initComponents();
     }
 
@@ -93,7 +93,7 @@ public class StartWindow extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Georgia", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(90, 96, 106));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("<html> <center> Transformando você na sua <br> melhor versão </center> </html>");
+        jLabel3.setText("<html> <center> \"Transformando você na sua <br> melhor versão\" </center> </html>");
 
         jLabel2.setFont(new java.awt.Font("Germania One", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(90, 96, 106));
@@ -216,7 +216,7 @@ public class StartWindow extends javax.swing.JFrame {
         
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new StartWindow().setVisible(true);
+                new FirstWindow().setVisible(true);
             }
         });
     }
