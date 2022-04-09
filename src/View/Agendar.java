@@ -49,7 +49,7 @@ public class Agendar extends javax.swing.JInternalFrame {
         jScrollPane1.setViewportView(jList1);
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(255, 0, 255)));
+        jPanel1.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(254, 230, 201)));
 
         jLabel1.setFont(new java.awt.Font("Germania One", 1, 24)); // NOI18N
         jLabel1.setText("Agendamento");
@@ -67,7 +67,7 @@ public class Agendar extends javax.swing.JInternalFrame {
 
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "07:00", "08:00", "09:00", "10:00", "11:00" }));
 
-        jButton1.setBackground(new java.awt.Color(255, 0, 255));
+        jButton1.setBackground(new java.awt.Color(254, 230, 201));
         jButton1.setText("Agendar");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
