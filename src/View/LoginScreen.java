@@ -125,7 +125,9 @@ public class LoginScreen extends javax.swing.JInternalFrame {
         if(userInput.equals(user) && passInput.equals(pass)){
            MainWindow window = new MainWindow();
            window.setVisible(true);
+            MainWindow.window_ptr.setSize(FirstWindow.Instance.getWidth(), FirstWindow.Instance.getHeight());
            FirstWindow.Instance.killWindow();
+           
           
         }
         

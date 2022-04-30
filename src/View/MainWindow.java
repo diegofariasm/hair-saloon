@@ -14,8 +14,10 @@ public class MainWindow extends javax.swing.JFrame {
     /**
      * Creates new form mainWindow
      */
+    public static MainWindow window_ptr ;
     public MainWindow() {
         initComponents();
+        window_ptr = this;
     }
 
     /**
