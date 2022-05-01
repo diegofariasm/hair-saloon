@@ -1,5 +1,12 @@
 package View;
 
+import javax.swing.ComboBoxEditor;
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import javax.swing.border.Border;
+import javax.swing.border.CompoundBorder;
+import javax.swing.border.MatteBorder;
 import javax.swing.plaf.basic.BasicInternalFrameUI;
 
 /*
@@ -61,6 +68,17 @@ public class LoginScreen extends javax.swing.JInternalFrame {
         jLabel3.setFont(jLabel3.getFont().deriveFont(jLabel3.getFont().getSize()+5f));
         jLabel3.setText("Senha:");
 
+        tf_loginUser.setFont(tf_loginUser.getFont().deriveFont(tf_loginUser.getFont().getSize()+5f));
+        tf_loginUser.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/tf_user.png"))))); // NOI18N
+        tf_loginUser.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_loginUserActionPerformed(evt);
+            }
+        });
+
+        pf_loginPass.setFont(pf_loginPass.getFont().deriveFont(pf_loginPass.getFont().getSize()+5f));
+        pf_loginPass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/pf_password.png"))))); // NOI18N
+
         jButton1.setBackground(new java.awt.Color(254, 230, 201));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Entrar");
@@ -80,7 +98,7 @@ public class LoginScreen extends javax.swing.JInternalFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 257, Short.MAX_VALUE)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 269, Short.MAX_VALUE)
                     .addComponent(pf_loginPass, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(tf_loginUser, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -94,11 +112,11 @@ public class LoginScreen extends javax.swing.JInternalFrame {
                 .addGap(10, 10, 10)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tf_loginUser, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tf_loginUser, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pf_loginPass, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pf_loginPass, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(35, Short.MAX_VALUE))
@@ -132,6 +150,11 @@ public class LoginScreen extends javax.swing.JInternalFrame {
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    
+    private void tf_loginUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_loginUserActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_loginUserActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

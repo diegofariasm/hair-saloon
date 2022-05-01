@@ -36,13 +36,13 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jTextField3 = new javax.swing.JTextField();
+        tf_register_name = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
-        jPasswordField3 = new javax.swing.JPasswordField();
+        pf_register_confirm_pass = new javax.swing.JPasswordField();
         jLabel8 = new javax.swing.JLabel();
-        jTextField4 = new javax.swing.JTextField();
-        jPasswordField5 = new javax.swing.JPasswordField();
+        tf_register_email = new javax.swing.JTextField();
+        pf_register_pass = new javax.swing.JPasswordField();
 
         getContentPane().setLayout(new java.awt.GridBagLayout());
 
@@ -59,6 +59,14 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
         jLabel6.setFont(jLabel6.getFont().deriveFont(jLabel6.getFont().getSize()+5f));
         jLabel6.setText("Senha:");
 
+        tf_register_name.setFont(tf_register_name.getFont().deriveFont(tf_register_name.getFont().getSize()+5f));
+        tf_register_name.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/tf_user.png"))))); // NOI18N
+        tf_register_name.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tf_register_nameActionPerformed(evt);
+            }
+        });
+
         jButton1.setBackground(new java.awt.Color(254, 230, 201));
         jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jButton1.setText("Registrar");
@@ -67,8 +75,17 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
         jLabel7.setFont(jLabel7.getFont().deriveFont(jLabel7.getFont().getSize()+5f));
         jLabel7.setText("Email:");
 
+        pf_register_confirm_pass.setFont(pf_register_confirm_pass.getFont().deriveFont(pf_register_confirm_pass.getFont().getSize()+5f));
+        pf_register_confirm_pass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/pf_password.png"))))); // NOI18N
+
         jLabel8.setFont(jLabel8.getFont().deriveFont(jLabel8.getFont().getSize()+5f));
         jLabel8.setText("Confirme sua senha:");
+
+        tf_register_email.setFont(tf_register_email.getFont().deriveFont(tf_register_email.getFont().getSize()+5f));
+        tf_register_email.setBorder(javax.swing.BorderFactory.createCompoundBorder(null, javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/tf_email.png")))))); // NOI18N
+
+        pf_register_pass.setFont(pf_register_pass.getFont().deriveFont(pf_register_pass.getFont().getSize()+5f));
+        pf_register_pass.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), javax.swing.BorderFactory.createMatteBorder(0, 32, 0, 0, new javax.swing.ImageIcon(getClass().getResource("/Images/pf_password.png"))))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -81,12 +98,12 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
                     .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jTextField3, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPasswordField3, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 291, Short.MAX_VALUE)
-                    .addComponent(jTextField4, javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPasswordField5, javax.swing.GroupLayout.Alignment.LEADING))
+                    .addComponent(pf_register_confirm_pass, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 388, Short.MAX_VALUE)
+                    .addComponent(pf_register_pass, javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tf_register_name)
+                    .addComponent(tf_register_email, javax.swing.GroupLayout.Alignment.LEADING))
                 .addGap(44, 44, 44))
         );
         jPanel1Layout.setVerticalGroup(
@@ -97,19 +114,19 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
                 .addGap(20, 20, 20)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tf_register_name, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tf_register_email, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField5, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pf_register_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPasswordField3, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(pf_register_confirm_pass, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -118,13 +135,17 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.ipadx = 104;
+        gridBagConstraints.ipadx = 208;
         gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
         gridBagConstraints.insets = new java.awt.Insets(0, 194, 0, 194);
         getContentPane().add(jPanel1, gridBagConstraints);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tf_register_nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tf_register_nameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tf_register_nameActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -135,9 +156,9 @@ public class RegisterScreen extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPasswordField jPasswordField3;
-    private javax.swing.JPasswordField jPasswordField5;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
+    private javax.swing.JPasswordField pf_register_confirm_pass;
+    private javax.swing.JPasswordField pf_register_pass;
+    private javax.swing.JTextField tf_register_email;
+    private javax.swing.JTextField tf_register_name;
     // End of variables declaration//GEN-END:variables
 }

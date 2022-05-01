@@ -120,7 +120,7 @@ public class Products extends javax.swing.JInternalFrame {
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
                         .addComponent(jButton1)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -294,7 +294,7 @@ public class Products extends javax.swing.JInternalFrame {
                         .addComponent(jLabel13)
                         .addGap(18, 18, 18)
                         .addComponent(jButton4)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -350,7 +350,7 @@ public class Products extends javax.swing.JInternalFrame {
                         .addComponent(jLabel16)
                         .addGap(18, 18, 18)
                         .addComponent(jButton5)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -405,7 +405,7 @@ public class Products extends javax.swing.JInternalFrame {
                         .addComponent(jLabel19)
                         .addGap(18, 18, 18)
                         .addComponent(jButton6)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, 0))
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
