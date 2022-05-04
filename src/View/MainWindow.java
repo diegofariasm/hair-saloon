@@ -14,7 +14,7 @@ public class MainWindow extends javax.swing.JFrame {
     /**
      * Creates new form mainWindow
      */
-    public static MainWindow window_ptr ;
+    public static MainWindow window_ptr;
     public MainWindow() {
         initComponents();
         window_ptr = this;
@@ -65,6 +65,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_products.setBackground(new java.awt.Color(32, 32, 35));
         btn_products.setFont(btn_products.getFont().deriveFont(btn_products.getFont().getStyle() | java.awt.Font.BOLD, btn_products.getFont().getSize()+10));
         btn_products.setForeground(new java.awt.Color(255, 255, 255));
+        btn_products.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/product.png"))); // NOI18N
         btn_products.setText("Produtos");
         btn_products.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_products.setFocusPainted(false);
@@ -78,6 +79,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_home.setBackground(new java.awt.Color(32, 32, 35));
         btn_home.setFont(btn_home.getFont().deriveFont(btn_home.getFont().getStyle() | java.awt.Font.BOLD, btn_home.getFont().getSize()+10));
         btn_home.setForeground(new java.awt.Color(255, 255, 255));
+        btn_home.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/home.png"))); // NOI18N
         btn_home.setText("Inicio");
         btn_home.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_home.setFocusPainted(false);
@@ -93,6 +95,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_agend.setBackground(new java.awt.Color(32, 32, 35));
         btn_agend.setFont(btn_agend.getFont().deriveFont(btn_agend.getFont().getStyle() | java.awt.Font.BOLD, btn_agend.getFont().getSize()+10));
         btn_agend.setForeground(new java.awt.Color(255, 255, 255));
+        btn_agend.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/agend.png"))); // NOI18N
         btn_agend.setText("Agendar");
         btn_agend.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_agend.setFocusPainted(false);
@@ -106,6 +109,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_about.setBackground(new java.awt.Color(32, 32, 35));
         btn_about.setFont(btn_about.getFont().deriveFont(btn_about.getFont().getStyle() | java.awt.Font.BOLD, btn_about.getFont().getSize()+10));
         btn_about.setForeground(new java.awt.Color(255, 255, 255));
+        btn_about.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/about.png"))); // NOI18N
         btn_about.setText("Sobre");
         btn_about.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_about.setFocusPainted(false);
@@ -119,6 +123,7 @@ public class MainWindow extends javax.swing.JFrame {
         btn_contato.setBackground(new java.awt.Color(32, 32, 35));
         btn_contato.setFont(btn_contato.getFont().deriveFont(btn_contato.getFont().getStyle() | java.awt.Font.BOLD, btn_contato.getFont().getSize()+10));
         btn_contato.setForeground(new java.awt.Color(255, 255, 255));
+        btn_contato.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/contact.png"))); // NOI18N
         btn_contato.setText("Contato");
         btn_contato.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btn_contato.setFocusPainted(false);
